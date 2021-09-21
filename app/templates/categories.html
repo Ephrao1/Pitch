@@ -9,7 +9,14 @@
     {{ super() }}
     <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
     <link rel="stylesheet" href="{{url_for('static',filename='css/profile.css')}}">
+
     {% endblock %}
+
+    {% block content %}
+    {{macro.display(twitter)}}
+
+    {% endblock %}
+
            
    
 </head>
