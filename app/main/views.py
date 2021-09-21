@@ -87,15 +87,14 @@ def categories():
 
 def new_pitch():
     form = AddPitch()
-    my_upvotes = Upvote.query.filter_by(pitch_id = Pitch.id)
     if form.validate_on_submit():
         pitcher = form.pitcher.data
         description = form.description.data
         title = form.title.data
-        owner_id = current_user
+        owner_id = current_user.id
         category = form.category.data
         
-        new_pitch = Pitch(owner_id =current_user._get_current_object().id, title = title,description=description,category=category, pitcher = pitcher)
+        new_pitch = Pitch(owner_id =owner_id, title = title,description=description,category=category, pitcher = pitcher)
         db.session.add(new_pitch)
         db.session.commit()
         
