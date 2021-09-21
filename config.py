@@ -3,7 +3,7 @@ class Config:
 
    UPLOADED_PHOTOS_DEST ='app/static/photos' 
    SECRET_KEY = 'SECRET'
-     SQLALCHEMY_TRACK_MODIFICATIONS = False
+  
 
 #    email configurations
    MAIL_SERVER = 'smtp.googlemail.com'
