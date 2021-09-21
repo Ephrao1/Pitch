@@ -4,8 +4,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
-    color: rgb(235, 223, 223);
     font-size: 18px;
     /* overflow: hidden; */
     overflow-x: hidden;
