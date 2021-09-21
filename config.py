@@ -3,7 +3,7 @@ class Config:
 
    UPLOADED_PHOTOS_DEST ='app/static/photos' 
    SECRET_KEY = 'SECRET'
-   SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://ephraim:12345678@localhost/pitch'  
+     
 
 #    email configurations
    MAIL_SERVER = 'smtp.googlemail.com'
