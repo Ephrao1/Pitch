@@ -55,10 +55,13 @@ class Pitch(db.Model):
     downvotes = db.relationship('Downvote', backref = 'pitch', lazy = 'dynamic')
 
     
-    @classmethod
+    @classmethod 
     def get_pitches(cls, id):
         pitches = Pitch.query.order_by(pitch_id=id).desc().all()
-        return pitches
+        return pitches 
+    def save(self):
+        db.session.add(self)  
+        db.session.commit() 
 
     def __repr__(self):
         return f'Pitch {self.description}'
