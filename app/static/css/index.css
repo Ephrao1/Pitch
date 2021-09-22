@@ -4,11 +4,7 @@
     padding: 0;
     position: relative;
     margin: 0;
-    background-image: url(../images/cover4.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    
 }
 
 img {
